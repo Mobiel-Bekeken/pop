@@ -23,8 +23,8 @@ let package = Package(
                 
             ],
             exclude: [
-                "pop/POPAnimatorPrivate.h",
-                "pop/POPAnimationPrivate.h"
+                "POPAnimatorPrivate.h",
+                "POPAnimationPrivate.h"
             ],
             path: "pop",
             publicHeadersPath: "."
