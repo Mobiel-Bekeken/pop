@@ -19,7 +19,7 @@ let package = Package(
     exclude: [
         "pop/POPAnimatorPrivate.h",
         "pop/POPAnimationPrivate.h"
-    ]
+    ],
     targets: [
         .target(
             name: "pop",
