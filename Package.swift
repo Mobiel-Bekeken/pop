@@ -16,15 +16,15 @@ let package = Package(
     dependencies: [
         
     ],
-    exclude: [
-        "pop/POPAnimatorPrivate.h",
-        "pop/POPAnimationPrivate.h"
-    ],
     targets: [
         .target(
             name: "pop",
             dependencies: [
                 
+            ],
+            exclude: [
+                "pop/POPAnimatorPrivate.h",
+                "pop/POPAnimationPrivate.h"
             ],
             path: "pop",
             publicHeadersPath: "."
