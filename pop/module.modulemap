@@ -1,3 +1,6 @@
 framework module pop {
     umbrella header "POP.h"
+    
+    export *
+    module * { export * }
 }
