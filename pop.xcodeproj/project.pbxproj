@@ -945,8 +945,6 @@
 				0755AE881BEA19580094AB41 /* Sources */,
 				0755AE891BEA19580094AB41 /* Frameworks */,
 				0755AE8A1BEA19580094AB41 /* Resources */,
-				3A53D0B6BA95C3BBF6D969C3 /* [CP] Embed Pods Frameworks */,
-				C1BD52275F7F60A567C78D67 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -1020,8 +1018,6 @@
 				EC7E319518C93D6500B38170 /* Sources */,
 				EC7E319618C93D6500B38170 /* Frameworks */,
 				EC7E319718C93D6500B38170 /* Resources */,
-				8C22F2D1DF67D20F75F93301 /* [CP] Embed Pods Frameworks */,
-				87C11C7E3C11F27907D777EE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -1041,8 +1037,6 @@
 				ECF01ECF18C92B7F009E0AD1 /* Sources */,
 				ECF01ED018C92B7F009E0AD1 /* Frameworks */,
 				ECF01ED118C92B7F009E0AD1 /* Resources */,
-				CFC3BF04D331650C5B4A16CC /* [CP] Embed Pods Frameworks */,
-				691A59DA7BDEDCB681FC9C87 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -1086,6 +1080,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = EC19120D162FB53A00E0CC76;
@@ -1151,21 +1146,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		3A53D0B6BA95C3BBF6D969C3 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tests-pop-tests-tvos/Pods-Tests-pop-tests-tvos-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		438D7049A40532D60B1CFFD1 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1184,66 +1164,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		691A59DA7BDEDCB681FC9C87 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tests-pop-tests-ios/Pods-Tests-pop-tests-ios-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		87C11C7E3C11F27907D777EE /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tests-pop-tests-osx/Pods-Tests-pop-tests-osx-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		8C22F2D1DF67D20F75F93301 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tests-pop-tests-osx/Pods-Tests-pop-tests-osx-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		C1BD52275F7F60A567C78D67 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tests-pop-tests-tvos/Pods-Tests-pop-tests-tvos-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		CA15F9BB92BDB47C58EBAC0D /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1260,21 +1180,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		CFC3BF04D331650C5B4A16CC /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tests-pop-tests-ios/Pods-Tests-pop-tests-ios-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		F4415E40040FA8BD0169207E /* [CP] Check Pods Manifest.lock */ = {
@@ -1631,6 +1536,7 @@
 				DEFINES_MODULE = YES;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "$(PROJECT_DIR)/pop/pop-ios-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "$(PROJECT_DIR)/pop/module.modulemap";
 				PRODUCT_BUNDLE_IDENTIFIER = com.facebook.pop;
@@ -1647,6 +1553,7 @@
 				DEFINES_MODULE = YES;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "$(PROJECT_DIR)/pop/pop-ios-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "$(PROJECT_DIR)/pop/module.modulemap";
 				PRODUCT_BUNDLE_IDENTIFIER = com.facebook.pop;
@@ -1663,6 +1570,7 @@
 				DEFINES_MODULE = YES;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "$(PROJECT_DIR)/pop/pop-ios-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "$(PROJECT_DIR)/pop/module.modulemap";
 				PRODUCT_BUNDLE_IDENTIFIER = com.facebook.pop;
@@ -1683,6 +1591,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = ECC1DB1A18CA291B008C7DEA /* StaticLibrary.xcconfig */;
 			buildSettings = {
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				PRODUCT_NAME = pop;
 				SDKROOT = iphoneos;
 			};
@@ -1706,6 +1615,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = ECC1DB1A18CA291B008C7DEA /* StaticLibrary.xcconfig */;
 			buildSettings = {
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				PRODUCT_NAME = pop;
 				SDKROOT = iphoneos;
 			};
@@ -1715,6 +1625,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = ECC1DB1A18CA291B008C7DEA /* StaticLibrary.xcconfig */;
 			buildSettings = {
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				PRODUCT_NAME = pop;
 				SDKROOT = iphoneos;
 			};
