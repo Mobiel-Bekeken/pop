@@ -22,6 +22,10 @@ let package = Package(
             dependencies: [
                 
             ],
+            exclude: [
+                "POPAnimatorPrivate.h",
+                "POPAnimationPrivate.h"
+            ],
             path: "pop",
             publicHeadersPath: "."
         )
